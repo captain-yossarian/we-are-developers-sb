@@ -7,3 +7,12 @@ type Json =
     | {
         [prop: string]: Json
     }
+
+type Primitives =
+    | string
+    | number
+    | bigint
+    | boolean
+    | symbol
+    | null
+    | undefined
