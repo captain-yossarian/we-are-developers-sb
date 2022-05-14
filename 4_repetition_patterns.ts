@@ -1,6 +1,5 @@
 type Coordinates = `${number},${number};`;
 
-
 /**
  * Obtains last element in the tuple
  */

@@ -1,6 +1,3 @@
-// You can find more about validations here https://catchts.com/validators and here https://catchts.com/type-negation
-
-
 type ErrorMessage<Text extends string | number> =
     `Property [${Text}] is forbidden`
 
@@ -16,7 +13,6 @@ type ForbidProperty<
     }
 
 // We want to forbid using [name]
-
 const foo = <
     Prop extends PropertyKey,
     Value extends Json,
@@ -29,10 +25,11 @@ const foo = <
 
 foo({ email: 'hello@dome.com', name: 'John' })
 
-
 // --------------> HOME WORK <--------------
 
 // Throw TS error if any value in provided argument is 5
 
 foo({ age: 5 }) // expect error
 foo({ age: 6 }) // ok
+
+// You can find more about validations here https://catchts.com/validators and here https://catchts.com/type-negation

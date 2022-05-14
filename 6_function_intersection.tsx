@@ -9,6 +9,7 @@ type Dropdown = {
   selectedOption: number;
 };
 
-const Component: FC<Checkbox | Dropdown> = (props) => <p>text</p>; // make intersection, in other words - overload react component
+// make intersection, in other words - overload react component
+const Component: FC<Checkbox | Dropdown> = (props) => <p>text</p>;
 
 const MixComponent = <Component checked options={[]} selectedOption={0} />; // expected error
