@@ -1,0 +1,19 @@
+{
+  "name": "wearedevelopers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ts": "tsc --init"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.0.9",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "react": "^18.1.0"
+  }
+}
