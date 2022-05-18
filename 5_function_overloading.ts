@@ -21,4 +21,5 @@ function conditional<T,>(arg: T) {
 conditional(1) // string
 conditional('str') // 'str'
 
+export { }
 

@@ -1,10 +1,9 @@
 // Here https://catchts.com/safer-types you can find more
-
-type Animal = { tag: 'animal' }
+type Animal = { tag: 'animal' } // convert to interface
 
 type Dog = Animal & { bark: true }
 
-declare let animalFn: (x: Animal) => void;
+declare let animalFn: (x: Animal) => void; // add generic
 declare let dogFn: (x: Dog) => void;
 
 // Function arguments are contravariant 

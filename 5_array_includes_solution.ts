@@ -12,10 +12,6 @@ type BackwardInference<T, P> =
     P extends any ? T extends P ? P : never : never;
 
 type Generalize<T> = BackwardInference<T, Primitives>
-{
-    type _ = Generalize<2 | 's'> // stirng | number
-    type __ = Generalize<42> //  number
-}
 
 const withTuple = <
     List extends Primitives[]

@@ -26,6 +26,6 @@ rgb(0, 0, -1) // expected error
  * Because union has 16_581_375, whereas TS supports near 100_000 elements in a union
  * For instance ComputeRange<45> is supported and ComputeRange<46> is not
  */
-type RGB = `${Octal}.${Octal}.${Octal}`
+type RGB = `${Octal}.${Octal}.${Octal}` // 255 ^ 3 = 16_581_375
 
 
