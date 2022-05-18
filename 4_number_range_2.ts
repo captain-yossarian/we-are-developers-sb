@@ -1,4 +1,3 @@
-
 /**
  * I have purposely removed all RGB related code just for the
  * sake of readability
@@ -9,7 +8,7 @@ type DecimalPart = ComputeRange<99> // 0 .. 99
 
 type AlphaChannel = `0.${DecimalPart}` | `${0 | 1}`
 
-type Validate<Alpha extends number = 1> = `${Alpha}` extends AlphaChannel ? Alpha : never
+type Validate<Alpha extends number> = `${Alpha}` extends AlphaChannel ? Alpha : never
 
 function alpha<Alpha extends number>(alpha: Validate<Alpha>) { }
 

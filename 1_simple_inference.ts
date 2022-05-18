@@ -1,6 +1,5 @@
 // How we can infer literal type in TypeScript
 // based on https://catchts.com/infer-arguments
-
 {
     const foo = <Obj extends { prop: number }>(obj: Obj) => obj
 
@@ -11,7 +10,6 @@
 
     const result = foo({ prop: 42 }) // { prop: 42 }     < ---------- Ok
 }
-
 {
     // PropertyKey is built-in type, it is just a union of:       string|number|symbol
     const foo = <
@@ -21,8 +19,6 @@
     >(obj: Obj) => obj
 
     // { prop: 42, greet: 'hello' }
-    const result = foo({ prop: 42, greet: 'hello', })
-
+    const result = foo({ prop: 42, greet: 'hello', a: { b: { c: 'nested property' } } })
     // 1) Try to add deep nested property
-    // 2) Make sure deep nested property is infered as expected with help of recursive inference Record<Prop, Value | Obj>
 }
